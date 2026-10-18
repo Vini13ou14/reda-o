@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Decore a Redação</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header><h1>📜 Decore a Redação</h1><span class="xp" id="cnt"></span></header>
+<p class="hint">Digite o modelo de memória, do começo ao fim. A cada <b>espaço</b> (ou Enter) a palavra é conferida, <b>com vírgulas, pontos e letras maiúsculas/minúsculas</b> (aspas e parênteses você pode ignorar). Errou? Tudo zera. Nas partes <span class="chip">laranja</span> o jogo avisa e você escreve o que quiser.</p>
+<div class="card" id="txt"></div>
+<div id="hold"><div id="fp" hidden>
+  <div>✍️ Chegou na parte livre: <b id="fl"></b></div>
+  <div class="hint" id="fh"></div>
+  <textarea id="fi" placeholder="Escreva aqui…"></textarea>
+  <button class="main" id="ok">OK</button> <span class="hint" id="fm"></span>
+</div>
+<input id="w" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="digite e aperte espaço"></div>
+<div id="err" hidden></div>
+<div id="win"></div>
+<div class="card" id="full" hidden></div>
+<div class="row"><button id="vw">👁 Ver texto completo</button><button id="rs">↺ Recomeçar</button><label><input type="checkbox" id="acc"> ignorar acentos</label><span class="hint" id="rec"></span></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
